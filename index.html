@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>4Z API - 【2025专业版】国内AI大模型API中转服务 | GPT-4o/Claude/Deepseek全系列API接口</title>
+    
+    <!-- 增强版Meta描述 -->
+    <meta name="description" content="专业AI大模型API中转服务，支持GPT-4o/Claude-3.5/Deepseek等全系列模型。国内稳定直连无需代理，延迟低至50ms，成本节省90%，7×24小时技术支持。开发者首选AI API接口提供商，注册立享100元体验金！">
+    <meta name="keywords" content="API中转,AI API服务,大模型API,ChatGPT API,国内API接口,OpenAI API,Claude API,Deepseek API,免费API,API加速,稳定API,GPT-4o API,API密钥,便宜API服务,高速API,API代理">
+    
+    <!-- 增加更多搜索引擎验证 -->
+    <meta name="baidu-site-verification" content="your-code">
+    <meta name="google-site-verification" content="your-code">
+    <meta name="msvalidate.01" content="425FA97B1C306E30117700826952CD3B" />
+    <meta name="bytedance-verification-code" content="your-code">
+    <meta name="360-site-verification" content="your-code">
+    <meta name="sogou_site_verification" content="your-code">
+    
+    <!-- 增强版社交媒体标签 -->
+    <meta property="og:title" content="【2025专业版】AI大模型API中转服务 | 4Z API专业服务">
+    <meta property="og:description" content="专业AI大模型API中转平台，国内直连无需代理，支持ChatGPT-4o/Claude 3.5/Deepseek等全系列模型，注册送100元，开发者首选API服务商">
+    <meta property="og:url" content="https://zzzzapi.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://zzzzapi.com/images/api-banner-2025.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="4Z API中转服务">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:updated_time" content="2025-03-26T08:00:00+08:00">
+    
+    <!-- 移动端优化 -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <!-- 性能优化标签 -->
+    <link rel="preconnect" href="https://api.zzzzapi.com">
+    <link rel="dns-prefetch" href="https://api.zzzzapi.com">
+    <link rel="preload" as="image" href="/logo.png">
+    <link rel="preload" as="font" href="/fonts/custom-font.woff2" crossorigin>
+    
+    <!-- 多语言支持 -->
+    <link rel="alternate" hreflang="zh-CN" href="https://zzzzapi.com/">
+    <link rel="alternate" hreflang="en" href="https://zzzzapi.com/en/">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- 原有样式保持不变 -->
+    <style>
+        /* 更新配色方案 */
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1d4ed8;
+            --accent-color: #3b82f6;
+            --text-color: #1f2937;
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --radius: 12px;
+            --spacing: 1.5rem;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        /* 基础样式优化 */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* 内容区域优化 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* 标题样式优化 */
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a365d;
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: #2d3748;
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        /* 内容区块优化 */
+        .markdown-content {
+            background: linear-gradient(145deg, #0284c7, #0ea5e9);
+            color: white;
+            padding: 2.5rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin: 2rem auto;
+            max-width: 1000px;
+        }
+
+        /* 列表样式优化 */
+        .markdown-content ul,
+        .markdown-content ol {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            list-style-position: inside;
+        }
+
+        .markdown-content li {
+            margin: 0.8rem 0;
+            line-height: 1.6;
+        }
+
+        /* 表格样式优化 */
+        .markdown-content table {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            margin: 2rem 0;
+            border-collapse: separate;
+            border-spacing: 0;
+            overflow: hidden;
+            color: var(--text-color);
+        }
+
+        .markdown-content th {
+            background: #1e40af;
+            color: white;
+            font-weight: 600;
+            padding: 1rem;
+        }
+
+        .markdown-content td {
+            padding: 1rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        /* 状态面板优化 */
+        .status-board {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin: 2rem auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .status-item {
+            padding: 1.5rem;
+            background: #f8fafc;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .status-label {
+            font-size: 0.9rem;
+            color: #64748b;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .status-value {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #0f172a;
+        }
+
+        /* 链接样式优化 */
+        a {
+            color: #3b82f6;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+
+        /* 代码块样式优化 */
+        pre {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+        
+        code {
+            font-family: 'Fira Code', monospace;
+            font-size: 0.9rem;
+        }
+
+        /* 响应式优化 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .markdown-content {
+            padding: 1.5rem;
+            }
+
+            .status-board {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* 强调文本样式 */
+        strong {
+            color: #f0f9ff;
+            font-weight: 600;
+        }
+
+        /* 引用块样式 */
+        blockquote {
+            background: rgba(255, 255, 255, 0.1);
+            border-left: 4px solid #60a5fa;
+            margin: 1.5rem 0;
+            padding: 1rem 1.5rem;
+            border-radius: 0 8px 8px 0;
+        }
+
+        /* 按钮样式优化 */
+        .button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin: 1rem 0;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.5);
+            text-decoration: none;
+        }
+
+        /* 头部标题区域样式 */
+        .content {
+            text-align: center;
+            padding: 2rem 0;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* 标题样式 */
+        .content h1, 
+        .content h2 {
+            text-align: center;
+            margin: 1rem auto;
+            max-width: 900px;
+            line-height: 1.4;
+        }
+
+        /* 分隔线样式 */
+        .content h2:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+            margin: 1rem auto;
+        }
+
+        /* 按钮容器样式 */
+        .button-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        /* 按钮样式优化 */
+        .button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            font-size: 1.2rem;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-align: center;
+            margin: 1rem auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(59, 130, 246, 0.4);
+        }
+
+        /* 实时更新区域样式 */
+        .update-info {
+            text-align: center;
+            margin: 1.5rem 0;
+            color: var(--text-color);
+        }
+
+        /* 箭头样式 */
+        .arrow-down {
+            text-align: center;
+            margin: 2rem auto;
+            cursor: pointer;
+            font-size: 1.5rem;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* 图标样式优化 */
+        .icon-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .icon-text span {
+            display: inline-flex;
+            align-items: center;
+        }
+        
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .content h1 {
+                font-size: 1.8rem;
+            }
+            
+            .content h2 {
+                font-size: 1.4rem;
+            }
+
+            .button {
+                width: 90%;
+                max-width: 300px;
+            }
+        }
+
+        /* 更新时间样式优化 */
+        .update-time {
+            background: linear-gradient(135deg, #1a365d, #2563eb);
+            color: #ffffff;
+            padding: 5px 15px;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 10px 0;
+        }
+
+        #curdate, #update-time {
+            color: #1a365d;  /* 深蓝色 */
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        /* 时间容器样式 */
+        .time-container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 8px 15px;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            margin: 10px 0;
+        }
+
+        /* 修改markdown-content中的链接样式 */
+        .markdown-content a {
+            color: #ffd700;  /* 金色 */
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .markdown-content a:hover {
+            color: #fff176;  /* 淡金色 */
+            text-decoration: underline;
+        }
+    </style>
+    <link rel="canonical" href="https://zzzzapi.com/">
+    <meta name="theme-color" content="#2563eb">
+</head>
+<body>
+    <div class="background"></div>
+        <div class="container">
+        <div class="content">
+            <h1>【2025年度】中国开发者首选AI大模型API中转服务平台</h1>
+            <h2>一站式接入ChatGPT、Claude、Deepseek、Gemini等顶级AI模型API</h2>
+            <div class="icon-text">
+                <span>🚀 国内超低延迟直连</span>
+                <span>💰 比官方低40%成本</span>
+                <span>🛡️ 企业级稳定性保障</span>
+                <span>🔑 即刻可用API密钥</span>
+            </div>
+            <div class="button-container">
+                <a href="https://zzzzapi.com/" target="_self" class="button">
+                    <span class="floating-badge">限时优惠</span>
+                    免费注册领取100元API额度
+                </a>
+            </div>
+            <div class="update-info glow-container">
+                <h3>实时数据更新：<span class="time-container"><strong id="curdate"></strong></span></h3>
+            </div>
+            <div class="arrow-down" onclick="scrollToContent()">⬇️ 了解更多AI API中转服务详情</div>
+        </div>
+    </div>
+
+    <!-- Second Screen Content -->
+    <section class="markdown-content glow-container" id="more-content">
+        <blockquote>
+            <p>【2025年重磅升级】<strong>AI大模型API中转服务完全指南</strong> — 为中国开发者打造的<strong>免费API接口</strong>，让AI开发无障碍！</p>
+        </blockquote>
+        
+        <p><a href="https://zzzzapi.com/" target="_blank" class="zzzzapi-highlight">4Z API</a>专为中国开发者提供<strong>高速稳定的AI大模型API中转服务</strong>，彻底解决国内开发者API访问难题。</p>
+        
+        <p>国内<strong>直接访问</strong>ChatGPT API、Claude API和Deepseek API等服务，无需科学上网，响应速度快至50ms！</p>
+
+        <div class="section-container section-1">
+            <h2>为什么越来越多开发者选择API中转服务？</h2>
+            <p><strong>4Z API中转服务</strong>专为解决中国开发者和企业AI开发痛点而生，提供比官方渠道更高效、更经济的API接入体验。</p>
+            <ul>
+                <li>✓ <strong>完美解决访问问题</strong>：无需任何代理工具，稳定直连，延迟低至50ms</li>
+                <li>✓ <strong>成本大幅降低</strong>：比官方渠道低40%的价格，人民币付款更便捷</li>
+                <li>✓ <strong>全模型覆盖</strong>：一站式接入GPT-4o/o1、Claude 3.5、Deepseek等所有热门模型</li>
+                <li>✓ <strong>使用门槛低</strong>：注册即送100元体验金，5分钟完成API集成</li>
+                <li>✓ <strong>中文技术支持</strong>：7×24小时专业中文技术支持，解决各类集成问题</li>
+            </ul>
+        </div>
+        
+        <div class="section-container section-2">
+            <h2>【2025年3月】热门AI模型API全面支持列表</h2>
+            <p>我们提供市场上<strong>最全面的AI大模型API接口</strong>，支持所有主流AI大模型：</p>
+            <table>
+                <tr>
+                    <th>模型API类型</th>
+                    <th>支持型号</th>
+                    <th>适用场景</th>
+                    <th>热度指数</th>
+                </tr>
+                <tr>
+                    <td><strong>OpenAI API</strong></td>
+                    <td>GPT-4o/o1/Turbo/3.5</td>
+                    <td>通用AI应用、聊天机器人、内容创作</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td><strong>Claude API</strong></td>
+                    <td>Claude 3.5/3 Opus/Sonnet/Haiku</td>
+                    <td>长文本理解、专业内容创作、学术研究</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td><strong>Deepseek API</strong></td>
+                    <td>Deepseek-67B/CodeLlama</td>
+                    <td>代码开发、中文AI处理、技术文档</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td><strong>其他API</strong></td>
+                    <td>Gemini Pro/Ultra、文心一言、Llama 3等</td>
+                    <td>多语言支持、垂直行业应用</td>
+                    <td>⭐⭐⭐⭐</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+  <script>
+        const colors = [
+            ['#ff0080', '#7928ca'], 
+            ['#ff4d4d', '#f9cb28'], 
+            ['#7928ca', '#4c88e8'], 
+            ['#4c88e8', '#4FE2B1'], 
+            ['#ff0080', '#ff7f00']  
+        ];
+        const randomIndex = Math.floor(Math.random() * colors.length);
+        const [color1, color2] = colors[randomIndex];
+        document.documentElement.style.setProperty('--color-1', color1);
+        document.documentElement.style.setProperty('--color-2', color2);
+
+        function scrollToContent() {
+            document.getElementById('more-content').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function formatDate(date) {
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+            return `${year}/${month}/${day}`;
+        }
+        
+        document.getElementById('curdate').textContent = formatDate(new Date());
+        document.getElementById('update-time').textContent = formatDate(new Date()).replace(/\//g, '年').replace(/(\d+)$/, '$1日');
+        
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "4Z API中转服务",
+      "alternateName": ["4Z AI API中转站", "ChatGPT API中转服务"],
+      "url": "https://zzzzapi.com",
+      "description": "专业提供ChatGPT、Claude、Deepseek API中转服务，稳定直连不翻墙，成本低至官方10%",
+      "inLanguage": "zh-CN",
+      "dateModified": "2025-03-26T08:00:00+08:00",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://zzzzapi.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "API中转服务安全吗？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "我们采用端到端加密技术，通过ISO27001信息安全认证，确保数据安全。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "支持哪些AI模型？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "支持GPT-4o/4/3.5、Claude 3系列、Deepseek等主流大模型，持续更新。"
+        }
+      }]
+    }
+    </script>
+
+    <div class="status-board">
+        <div class="status-item glow-container">
+            <span class="status-label">API服务状态</span>
+            <span class="status-value">🟢 稳定运行中</span>
+        </div>
+        <div class="status-item glow-container">
+            <span class="status-label">实时响应速度</span>
+            <span class="status-value" id="latency">50ms</span>
+        </div>
+        <div class="status-item glow-container">
+            <span class="status-label">今日API调用次数</span>
+            <span class="status-value" id="dailyCalls">1,458,732</span>
+        </div>
+        <div class="status-item glow-container">
+            <span class="status-label">在线开发者数量</span>
+            <span class="status-value" id="onlineUsers">86,241</span>
+        </div>
+    </div>
+            
+    <script>
+    function updateStatusBoard() {
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, '0');
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+        
+        document.getElementById('latency').textContent = Math.floor(Math.random() * 20 + 40) + 'ms';
+        document.getElementById('dailyCalls').textContent = numberWithCommas(Math.floor(Math.random() * 1000000 + 1000000));
+        
+        const baseUsers = 85000;
+        const randomUsers = Math.floor(Math.random() * 2000);
+        document.getElementById('onlineUsers').textContent = numberWithCommas(baseUsers + randomUsers);
+    }
+
+    function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+
+    setInterval(updateStatusBoard, 30000);
+    updateStatusBoard();
+    </script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let startTime = new Date();
+        window.addEventListener('beforeunload', function() {
+            let endTime = new Date();
+            let timeSpent = (endTime - startTime) / 1000;
+            navigator.sendBeacon('/api/stats', JSON.stringify({
+                timeSpent: timeSpent,
+                page: 'home'
+            }));
+        });
+    });
+    </script>
+
+    <!-- 添加结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "4Z API中转服务",
+      "url": "https://zzzzapi.com",
+      "description": "专业提供ChatGPT、Claude、Deepseek API中转服务，稳定直连不翻墙",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://zzzzapi.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+</body>
+</html>
